@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0b10'/><rect x='20' y='20' width='60' height='60' stroke='%23cfff04' stroke-width='8' fill='none'/><path d='M20 20L80 80' stroke='%23cfff04' stroke-width='8'/></svg>" type="image/svg+xml">
+    <title>Return Policy — yttrix-grid.blog</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="./css/styles.css" />
+     <script src="https://unpkg.com/lucide@latest"></script>
+     <script src="https://unpkg.com/split-type"></script>
+
+  </head>
+  <body>
+    <div class="grid-overlay"></div>
+    <load
+      src="./partials/header.html"
+/>
+
+<main>
+  <section class="pages">
+    <div class="container">
+      <h1 class="page-title">Политика <span class="accent">возврата средств</span></h1>
+
+      <div class="content-block">
+        <h2>Условия для оформления возврата</h2>
+        <p>Вы можете претендовать на полный или частичный возврат средств в рамках платформы <strong>yttrix-grid.blog</strong> в следующих ситуациях:</p>
+        <ul class="styled-list">
+          <li>
+            <strong>Несоответствие описанию:</strong> Если содержание предоставленного материала существенно отличается от программы, заявленной на сайте.
+          </li>
+          <li>
+            <strong>Технические неисправности:</strong> Критические проблемы на стороне нашей инфраструктуры, делающие использование сервиса невозможным.
+          </li>
+          <li>
+            <strong>Период охлаждения (EU Right):</strong> Отказ в течение 14 календарных дней с момента оплаты (согласно законам ЕС), если доступ к основному объему данных еще не был получен.
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-block steps-container">
+        <h2>Процедура запроса</h2>
+        <div class="step-item">
+            <span class="step-num">01</span>
+            <p>Отправьте письмо на <a href="mailto:support@yttrix-grid.blog" class="accent">support@yttrix-grid.blog</a> с темой «Запрос на возврат средств».</p>
+        </div>
+        <div class="step-item">
+            <span class="step-num">02</span>
+            <p>Укажите ваше имя, e-mail покупки и детальную причину запроса.</p>
+        </div>
+        <div class="step-item">
+            <span class="step-num">03</span>
+            <p>Наша служба поддержки в Милане рассмотрит заявку в течение 48 часов.</p>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h2>Сроки и способ возврата</h2>
+        <p>
+          После одобрения возврат производится в течение <strong>7–14 рабочих дней</strong>.
+          Средства возвращаются тем же способом, которым была совершена оплата (карта или банковский счет).
+        </p>
+      </div>
+
+      <div class="content-block accent-box red-accent">
+        <h2>Исключения и ограничения</h2>
+        <p>Возврат невозможен, если:</p>
+        <ul class="data-list">
+          <li>Прошло более 14 календарных дней с момента транзакции.</li>
+          <li>Изучено или скачано более 50% предоставленных материалов.</li>
+          <li>Причиной являются технические проблемы на стороне пользователя.</li>
+          <li>Нарушены условия Пользовательского соглашения.</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h2>Свяжитесь с нами</h2>
+        <p>По всем вопросам обращайтесь в поддержку:</p>
+        <a href="mailto:support@yttrix-grid.blog" class="contact-link">
+            <i data-lucide="mail"></i> support@yttrix-grid.blog
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+    <load src="./partials/footer.html" />
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+          <p class="cookie-popup__text">
+              Этот сайт использует cookies для улучшения работы.
+              Подробнее — в нашей <a href="./cookies.html" class="accent">Cookie политике</a>.
+          </p>
+          <button id="cookie-accept" class="btn btn--primary btn--small">Принять</button>
+      </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
