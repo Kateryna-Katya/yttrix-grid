@@ -669,3 +669,29 @@ section { padding: 100px 0; border-bottom: 1px solid var(--color-border); }
 .contact-link i {
   width: 20px;
 }
+/* Обновленный блок Hero */
+.hero {
+  height: auto; /* Используем min-height вместо фиксированного height */
+  display: flex;
+  align-items: center;
+  padding-top: 100px; /* Отступ, чтобы заголовок не залазил под хедер (80px хедер + 20px запас) */
+  background: radial-gradient(circle at top right, rgba(207, 255, 4, 0.05), transparent);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Дополнительный фикс для мобильных устройств */
+@media (max-width: 768px) {
+  .hero {
+      padding-top: 120px; /* На мобилках лучше дать чуть больше места */
+      align-items: flex-start; /* На маленьких экранах лучше прижать к верху, чтобы влезли кнопки */
+  }
+}
+
+/* Гарантируем, что заголовок имеет правильные отступы внутри SplitType */
+.hero__title .word {
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 0.3em;
+  line-height: 1.1;
+}
