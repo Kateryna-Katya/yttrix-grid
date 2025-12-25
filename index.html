@@ -1,56 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/yttrix-grid/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0b10'/><rect x='20' y='20' width='60' height='60' stroke='%23cfff04' stroke-width='8' fill='none'/><path d='M20 20L80 80' stroke='%23cfff04' stroke-width='8'/></svg>" type="image/svg+xml">
+    <title>yttrix-grid.blog — Консалтинг нового поколения</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+     <script src="https://unpkg.com/lucide@latest"></script>
+     <script src="https://unpkg.com/split-type"></script>
+
     <script type="module" crossorigin src="/yttrix-grid/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/yttrix-grid/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/yttrix-grid/assets/styles-BL5mDw3y.css">
   </head>
   <body>
+    <div class="grid-overlay"></div>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__text">yttrix<span class="accent">-</span>grid</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="nav-menu">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">О платформе</a></li>
+              <li class="nav__item"><a href="#services" class="nav__link">Преимущества</a></li>
+              <li class="nav__item"><a href="#innovation" class="nav__link">Инновации</a></li>
+              <li class="nav__item"><a href="#contact" class="nav__link nav__link--cta">Начать</a></li>
+          </ul>
+      </nav>
+
+      <button class="burger" aria-label="Menu" id="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
   </div>
 </header>
 
-
-    <main>
+    <main id="main-content">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="container">
+      <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Технологии нового поколения для вашего бизнеса</h1>
+          <p class="hero__subtitle">Передовая цифровая инфраструктура и решения, которые меняют правила игры. Платформа года уже доступна в Европе.</p>
+          <div class="hero__btns">
+              <a href="#contact" class="btn btn--primary">Запросить доступ</a>
+              <a href="#about" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about__grid">
+      <div class="about__image-wrapper">
+          <img src="/yttrix-grid/assets/one-DbRQxoHu.jpg" alt="Innovation" class="about__img">
+          <div class="about__badge">AI-инструменты</div>
+      </div>
+      <div class="about__text">
+          <h2 class="section-title">Воплотите <span class="accent">мечты</span> в реальность</h2>
+          <p>yttrix-grid — это экспертная поддержка на всех этапах. Мы предлагаем методологии, доказавшие эффективность в условиях жесткого рынка Италии и ЕС.</p>
+          <ul class="about__list">
+              <li><i data-lucide="check-circle"></i> Легко разобраться без опыта</li>
+              <li><i data-lucide="check-circle"></i> Быстрый и лёгкий старт</li>
+              <li><i data-lucide="check-circle"></i> Подключение за 2 минуты</li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+      <h2 class="section-title section-title--center">Технологии, которые <br><span class="accent">работают на вас</span></h2>
+      <div class="services__grid">
+          <div class="service-card">
+              <div class="service-card__icon"><i data-lucide="trending-up"></i></div>
+              <h3>Стратегия роста</h3>
+              <p>Оцените перспективы проекта с помощью наших аналитических инструментов.</p>
+          </div>
+          <div class="service-card active">
+              <div class="service-card__icon"><i data-lucide="cpu"></i></div>
+              <h3>Инновации</h3>
+              <p>Технология нового поколения для формирования пассивного дохода.</p>
+          </div>
+          <div class="service-card">
+              <div class="service-card__icon"><i data-lucide="shield-check"></i></div>
+              <h3>Доверие</h3>
+              <p>Проверенный партнер с прозрачной системой отчетности.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="innovation" id="innovation">
+  <div class="container">
+      <div class="innovation__box">
+          <div class="innovation__info">
+              <h2 class="section-title">Переосмыслите подход к развитию</h2>
+              <p>Наша платформа использует AI-инструменты для реальных задач, обеспечивая удобную адаптацию без сложностей.</p>
+              <a href="#contact" class="btn btn--primary">Бесплатная консультация</a>
+          </div>
+          <div class="innovation__visual">
+              <div class="floating-element"></div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+      <div class="contact__wrapper">
+          <div class="contact__header">
+              <h2 class="section-title">Начать <span class="accent">сейчас</span></h2>
+              <p>Заполните форму, и наш эксперт свяжется с вами в течение 15 минут.</p>
+          </div>
+
+          <form id="contact-form" class="form">
+              <div class="form__group">
+                  <input type="text" id="name" name="name" class="form__input" placeholder="Ваше имя" required>
+              </div>
+              <div class="form__group">
+                  <input type="email" id="email" name="email" class="form__input" placeholder="E-mail" required>
+              </div>
+              <div class="form__group">
+                  <input type="text" id="phone" name="phone" class="form__input" placeholder="Телефон (только цифры)" required>
+              </div>
+
+              <div class="form__captcha">
+                  <span id="captcha-question">2 + 5 = </span>
+                  <input type="text" id="captcha-answer" class="form__input form__input--small" placeholder="?" required>
+              </div>
+
+              <div class="form__checkbox">
+                  <input type="checkbox" id="agree" required>
+                  <label for="agree">Я согласен на обработку персональных данных</label>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">Отправить запрос</button>
+              <div id="form-message" class="form__message"></div>
+          </form>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__container">
+      <div class="footer__col">
+          <a href="/" class="logo logo--footer">
+              <span class="logo__text">yttrix<span class="accent">-</span>grid</span>
+          </a>
+          <p class="footer__description">
+              Переосмыслите подход к развитию. Стратегия роста на базе инноваций и экспертная поддержка на всех этапах.
+          </p>
+          <div class="footer__contacts">
+              <a href="tel:+493012345678" class="footer__link"><i data-lucide="phone" class="footer__icon"></i> +49 30 1234 5678</a>
+              <a href="mailto:hello@yttrix-grid.blog" class="footer__link"><i data-lucide="mail" class="footer__icon"></i> hello@yttrix-grid.blog</a>
+              <p class="footer__link"><i data-lucide="map-pin" class="footer__icon"></i> Friedrichstraße 176, 10117 Berlin</p>
+          </div>
+      </div>
+
+      <div class="footer__col">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__list">
+              <li><a href="#about" class="footer__nav-link">О нас</a></li>
+              <li><a href="#services" class="footer__nav-link">Услуги</a></li>
+              <li><a href="#innovation" class="footer__nav-link">Инновации</a></li>
+              <li><a href="#cases" class="footer__nav-link">Кейсы</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__col">
+          <h4 class="footer__title">Документы</h4>
+          <ul class="footer__list">
+              <li><a href="privacy.html" class="footer__nav-link">Privacy Policy</a></li>
+              <li><a href="cookies.html" class="footer__nav-link">Cookies Policy</a></li>
+              <li><a href="terms.html" class="footer__nav-link">Terms of Service</a></li>
+              <li><a href="return.html" class="footer__nav-link">Return Policy</a></li>
+              <li><a href="disclaimer.html" class="footer__nav-link">Disclaimer</a></li>
+              <li><a href="personal-data-policy.html" class="footer__nav-link">Personal Data</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer__bottom container">
+      <p>&copy; 2025 yttrix-grid.blog. Предложение активно только в странах ЕС.</p>
   </div>
 </footer>
-
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+          <p class="cookie-popup__text">
+              Этот сайт использует cookies для улучшения работы.
+              Подробнее — в нашей <a href="./cookies.html" class="accent">Cookie политике</a>.
+          </p>
+          <button id="cookie-accept" class="btn btn--primary btn--small">Принять</button>
+      </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
 
   </body>
 </html>
